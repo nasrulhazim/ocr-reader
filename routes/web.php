@@ -20,6 +20,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::group(['middleware' => ['auth']], function() {
+	Route::get('/ocr/{id}', 'OcrController@show');
 	Route::post('/ocr', 'OcrController@store');
 	Route::get('/ocr', 'OcrController@create');
+	Route::delete('ocr/{id}', 'OcrController@destroy');
 });

@@ -43,7 +43,11 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                        @if(!Auth::guest())
+                            <li>
+                                <a href="{{ url('/home') }}">Home</a>
+                            </li>
+                        @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -89,5 +93,7 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+
+    @yield('scripts')
 </body>
 </html>

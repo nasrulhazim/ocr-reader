@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Ocr;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $ocrs = Ocr::where('user_id', auth()->id())->paginate(5);
+        return view('home', compact('ocrs'));
     }
 }
