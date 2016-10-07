@@ -6,9 +6,9 @@ Install [Tessearct](https://github.com/tesseract-ocr/tesseract/wiki)
 
 Clone this repository
 
-	```
-	git clone https://github.com/nasrulhazim/ocr-reader.git
-	```
+```
+git clone https://github.com/nasrulhazim/ocr-reader.git
+```
 
 Create database, username and password and configure your database connection in `.env` file.
 
