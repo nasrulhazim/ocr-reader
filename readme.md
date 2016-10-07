@@ -15,3 +15,5 @@ Create database, username and password and configure your database connection in
 Go into the application `cd ocr-reader` and run `php artisan migrate`.
 
 Run `php artisan serve` to start using the application. You may register first before start using the reader.
+
+To run in terminal, you can use `php artisan ocr:read /path/to/image`
