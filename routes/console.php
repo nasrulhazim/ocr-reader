@@ -16,8 +16,3 @@ use Illuminate\Foundation\Inspiring;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
-
-Artisan::command('ocr:read {file}', function(){
-	$file = $this->argument('file');
-	echo (new TesseractOCR($file))->run();
-})->describe('Text Recognition from Images');
