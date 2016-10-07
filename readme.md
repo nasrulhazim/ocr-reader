@@ -1,6 +1,6 @@
 # Basic OCR Reader
 
-** Installation **
+**Installation**
 
 1. Install [Tessearct](https://github.com/tesseract-ocr/tesseract/wiki)
 
